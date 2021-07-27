@@ -1,0 +1,1 @@
+# SQL-query-for-serach-the-Bitlocker-RK-by-Machine-name
