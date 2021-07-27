@@ -1,0 +1,12 @@
+Select mach.Name "Machine Name" , Ky.RecoveryKeyId "Recovery Key ID" , Ky.RecoveryKey "Recovery Key", Ky.LastUpdateTime "Last Update Time" , 
+ky.Disclosed  "Disclosed"
+FROM [MBAM Recovery and Hardware].RecoveryAndHardwareCore.Machines MACH
+JOIN [MBAM Recovery and Hardware].RecoveryAndHardwareCore.Machines_Volumes vol 
+ON MACH.id = vol.machineid JOIN [MBAM Recovery and Hardware].RecoveryAndHardwareCore.Keys ky 
+ON vol.volumeId = ky.VolumeID
+where mach.name = 'DESKTOP-UC0A1H5'
+
+
+
+
+Change the machine name as per your requirement 
